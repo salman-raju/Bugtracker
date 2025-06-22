@@ -1,0 +1,125 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #00f7ff;
+  font-family: 'Orbitron', sans-serif; /* futuristic font */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+  color: #00f7ff;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.logo-text {
+  color: #00f7ff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #b2fefa;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #00f7ff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(0, 247, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.active-link {
+  background: rgba(0, 247, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.6);
+  color: #ffffff;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+.user-info {
+  color: #b2fefa;
+  text-align: right;
+  font-size: 0.85rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-left: 1.5rem;
+  line-height: 1.2;
+}
+
+.user-info .username strong {
+  color: #00f7ff;
+}
+
+.user-info .role span {
+  color: #00f7ff;
+  font-weight: 600;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.user-name {
+  color: #00f7ff;
+  font-weight: bold;
+}
+
+.logout-btn {
+  padding: 0.4rem 0.8rem;
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #ff1a1a;
+}
