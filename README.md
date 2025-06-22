@@ -4,8 +4,11 @@ A simple bug tracking application built with React (frontend) and Node.js/Expres
 
 ## 🔗 Live Demo
 
-- **Frontend (Render/Vercel)**: [https://bugtracker-frontend.onrender.com](https://bugtracker-frontend.onrender.com)
-- **Backend API**: [https://bugtracker-api.onrender.com](https://bugtracker-api.onrender.com)
+## 🔗 Live Demo
+
+- 🎯 **Frontend (Vercel)**: [https://bugtracker.vercel.app](https://bugtracker.vercel.app)
+- ⚙️ **Backend API (Render)**: [https://bugtracker-api.onrender.com](https://bugtracker-api.onrender.com)
+
 
 ## 📂 GitHub Repositories
 
